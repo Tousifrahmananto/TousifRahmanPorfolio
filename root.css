@@ -1,0 +1,75 @@
+:root {
+    --primary-color: #ff9800;
+    --secondary-color: #1a1a1a;
+    --background-color: #121212;
+    --text-color: #ffffff;
+    --highlight-color: #ff9800;
+    --button-bg-color: #ff9800;
+    --button-text-color: #ffffff;
+    --button-hover-bg-color: #e68a00;
+    --font-family: 'Rubik', sans-serif;
+    --padding: 50px;
+    --margin: 20px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+a {
+    color: var(--highlight-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--button-hover-bg-color);
+}
+
+section {
+    padding: var(--padding);
+    background-color: var(--secondary-color);
+}
+
+h1, h2, h3 {
+    color: var(--primary-color);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: var(--margin);
+}
+
+form input, form textarea, form button {
+    margin-top: 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: var(--button-hover-bg-color);
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 20px;
+    }
+}
