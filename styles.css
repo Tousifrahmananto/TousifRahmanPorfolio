@@ -12,6 +12,7 @@ header {
     align-items: center;
     padding: var(--padding);
     background-color: var(--secondary-color);
+    text-transform: uppercase;
 }
 
 header .logo {
